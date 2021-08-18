@@ -9,6 +9,11 @@
     padding-left: 35px;
     padding-right: 35px;
   }
+
+  @media (max-width: $max-mobile) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .visually-hidden {
