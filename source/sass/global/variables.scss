@@ -3,17 +3,27 @@
   --black: #000000;
   --background: #131314;
   --dark: #1c1c1c;
+  --braun: #48494d;
 
   --white-02: rgba(255, 255, 255, 0.2);
+  --gray-02: rgba(20, 21, 23, 0.2);
+  --gray-05: rgba(44, 46, 63, 0.5);
 
   --white: #ffffff;
+  --gray: #f6f6f6;
   --gray-light: #c9ccd4;
 
   --aqua: #0ad9c6;
 }
 
-$desktop: 1440px;
+$min-desktop: 1024px;
+$desktop: 1200px;
+$max-desktop: 1440px;
+
+$max-tablet: 1023px;
 $tablet: 768px;
+
+$max-mobile: 767px;
 $mobile: 320px;
 
 $resolution: 2dppx;
