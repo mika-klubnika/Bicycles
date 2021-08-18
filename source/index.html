@@ -16,24 +16,25 @@
 
 <body class="page__body">
   <header class="header">
-    <div class="container header__container">
-      <nav class="navigation">
-        <ul class="navigation__list list">
-          <li class="navigation__item">
-            <a href="#">О нас</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#">Виды велосипедов</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#">Видео про велосипеды</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <section class="promo">
+    <nav class="navigation navigation--close navigation--nojs">
+      <button class="navigation__toggle" type="button" aria-label="Открыть меню"></button>
+      <ul class="navigation__list list">
+        <li class="navigation__item">
+          <a href="#">О нас</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#">Виды велосипедов</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#">Видео про велосипеды</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="promo">
+      <div class="container promo__container">
         <div class="promo__block-text">
           <a>
             <img src="img/logo.png" srcset="img/logo@2x.png" alt="Логотип сайта" width="68" height="21">
@@ -46,16 +47,16 @@
           <p class="text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <label>
-              <input type="text" name="name" placeholder="Введите Ваше Имя">
+              <input type="text" name="userName" placeholder="Введите Ваше Имя" required>
             </label>
             <label>
-              <input type="tel" name="tel" placeholder="Введите Ваш номер телефона">
+              <input type="tel" name="tel" placeholder="Введите Ваш номер телефона" required>
             </label>
             <button type="submit">Подобрать велосипед мечты</button>
           </form>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </header>
 
   <script src="js/main.js"></script>
