@@ -1,10 +1,18 @@
 :root {
   --transparent: transparent;
-  --white: #ffffff;
   --black: #000000;
+  --background: #131314;
+  --dark: #1c1c1c;
+
+  --white-02: rgba(255, 255, 255, 0.2);
+
+  --white: #ffffff;
+  --gray-light: #c9ccd4;
+
+  --aqua: #0ad9c6;
 }
 
-$desktop: 1024px;
+$desktop: 1440px;
 $tablet: 768px;
 $mobile: 320px;
 

@@ -1,0 +1,10 @@
+.page {
+  font-family: "Open Sans", "Arial", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.page__body {
+  display: grid;
+  height: 100vh;
+  margin: 0;
+}

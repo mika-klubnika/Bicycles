@@ -1,0 +1,23 @@
+.header {
+  min-height: 825px;
+
+  letter-spacing: -0.005em;
+  color: var(--white);
+
+  background-color: var(--background);
+  background-image: url("../img/banner-bike-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @media (min-resolution: $resolution) {
+    background-image: url("../img/banner-bike-desktop@2x.jpg");
+  }
+
+  margin-bottom: 400px; //временно
+}
+
+.header__container {
+  padding-left: 280px;
+  padding-right: 280px;
+}

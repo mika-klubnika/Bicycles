@@ -99,8 +99,6 @@ exports.sprite = sprite;
 
 const copy = () => {
   return gulp.src([
-    "source/*.html",
-    "source/js/**",
     "source/fonts/*.{woff2,woff}",
     "source/img/**/*.{jpg,png,svg,webp}",
     "!source/img/icons/*"
@@ -156,6 +154,8 @@ const build = gulp.series(
   clean,
   gulp.parallel(
     styles,
+    html,
+    scripts,
     sprite,
     copy,
     images,
@@ -171,6 +171,8 @@ exports.default = gulp.series(
   clean,
   gulp.parallel(
     styles,
+    html,
+    scripts,
     sprite,
     copy,
     createWebp,
