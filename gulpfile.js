@@ -41,6 +41,25 @@ const styles = () => {
 
 exports.styles = styles;
 
+//Html
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("build"));
+}
+
+exports.html = html;
+
+//Scripts
+
+const scripts = () => {
+  return gulp.src("source/js/*.js")
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
+
+exports.scripts = scripts;
+
 // Images
 
 const images = () => {
