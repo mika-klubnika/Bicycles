@@ -1036,6 +1036,18 @@ img {
   @media (min-resolution: 2dppx) {
     .video__wrapper video {
       background-image: url("../img/video-preview-desktop@2x.jpg"); } }
+  @media (max-width: 1023px) {
+    .video__wrapper video {
+      background-image: url("../img/video-preview-tablet.jpg"); } }
+  @media (max-width: 1023px) and (min-resolution: 2dppx) {
+    .video__wrapper video {
+      background-image: url("../img/video-preview-tablet@2x.jpg"); } }
+  @media (max-width: 767px) {
+    .video__wrapper video {
+      background-image: url("../img/video-preview-mobile.jpg"); } }
+  @media (max-width: 767px) and (min-resolution: 2dppx) {
+    .video__wrapper video {
+      background-image: url("../img/video-preview-mobile@2x.jpg"); } }
 
 .video__wrapper button {
   position: absolute;
