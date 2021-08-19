@@ -12,6 +12,7 @@
   <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -69,6 +70,56 @@
           <li>Большой выбор крутых аксессуаров!</li>
           <li>Профессиональные консультации!</li>
         </ol>
+      </div>
+    </section>
+
+    <section class="types-bicycles">
+      <div class="container types-bicycles__container">
+        <h2 class="title text">Виды велосипедов</h2>
+        <ul class="types-bicycles__list list">
+          <li class="types-bicycles__item types-bicycles__item--road">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="img/road-bike.webp, img/road-bike@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/road-bike-tablet.webp, img/road-bike-tablet@2x.webp 2x">
+
+                <img src="img/road-bike.jpg" srcset="img/road-bike@2x.jpg 2x" alt="фото велосипеда" width="342"
+                  height="503">
+              </picture>
+              <figcaption>Дорожный велосипед</figcaption>
+            </figure>
+          </li>
+          <li class="types-bicycles__item types-bicycles__item--mountain">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="img/mountain-bike.webp, img/mountain-bike@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/mountain-bike-tablet.webp, img/mountain-bike-tablet@2x.webp 2x">
+
+                <img src="img/mountain-bike.jpg" srcset="img/mountain-bike@2x.jpg 2x" alt="фото велосипеда" width="342"
+                  height="566">
+              </picture>
+              <figcaption>Горный велосипед</figcaption>
+            </figure>
+          </li>
+          <li class="types-bicycles__item types-bicycles__item--children">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(min-width: 1024px)"
+                  srcset="img/children's-bike.webp, img/children's-bike@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/children's-bike-tablet.webp, img/children's-bike-tablet@2x.webp 2x">
+
+                <img src="img/children's-bike.jpg" srcset="img/children's-bike@2x.jpg 2x" alt="фото велосипеда"
+                  width="342" height="513">
+              </picture>
+              <figcaption>Детский велосипед</figcaption>
+            </figure>
+          </li>
+        </ul>
       </div>
     </section>
   </main>

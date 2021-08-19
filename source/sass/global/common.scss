@@ -40,6 +40,7 @@
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.005em;
+  color: var(--darkness);
 
   @media (max-width: $max-tablet) {
     font-size: 24px;
@@ -49,8 +50,4 @@
 
 .text {
   margin: 0;
-}
-
-.image {
-  vertical-align: middle;
 }
