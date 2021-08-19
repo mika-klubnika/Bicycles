@@ -3,7 +3,7 @@
   padding-bottom: 98px;
 
   @media (max-width: $max-tablet) {
-    padding-bottom: 35px;
+    padding-top: 35px;
     padding-bottom: 50px;
   }
 }
@@ -20,7 +20,15 @@
 }
 
 .footer h2 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+
+  @media (max-width: $max-tablet) {
+    margin-bottom: 22px;
+  }
+
+  @media (max-width: $max-mobile) {
+    font-size: 18px;
+  }
 }
 
 .footer p {
@@ -36,6 +44,8 @@
   color: var(--black-07);
 
   @media (max-width: $desktop) {
+    margin-bottom: 20px;
+
     padding-right: 35px;
     padding-left: 35px;
   }
@@ -48,6 +58,10 @@
 
   @media (min-resolution: $resolution) {
     background-image: url("../img/map-desktop@2x.png");
+  }
+
+  @media (max-width: $middle-desktop) {
+    width: 830px;
   }
 
   @media (max-width: $max-tablet) {
@@ -70,4 +84,9 @@
       background-image: url("../img/map-mobile@2x.png");
     }
   }
+}
+
+.footer__map iframe {
+  width: 100%;
+  height: 100%;
 }

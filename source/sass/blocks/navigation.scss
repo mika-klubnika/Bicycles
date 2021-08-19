@@ -72,15 +72,11 @@
   &::after {
     content: "";
     position: absolute;
-    top: 20px;
+    top: 24px;
     right: 10px;
     width: 30px;
     height: 1px;
     background-color: var(--gray-02);
-
-    @media (max-width: $max-mobile) {
-      right: 8px;
-    }
   }
 
   &::before {

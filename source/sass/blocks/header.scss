@@ -6,11 +6,11 @@
   color: var(--white);
 
   @media (max-width: $max-tablet) {
-    min-height: 675px;
+    min-height: 690px;
   }
 
   @media (max-width: $max-mobile) {
-    min-height: 695px;
+    min-height: 755px;
   }
 
   &::after {
