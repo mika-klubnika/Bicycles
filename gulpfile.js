@@ -71,7 +71,7 @@ const images = () => {
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("source/img"))
 }
 
 exports.images = images;
@@ -81,7 +81,7 @@ exports.images = images;
 const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
     .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("source/img"))
 }
 
 exports.createWebp = createWebp;
@@ -102,6 +102,7 @@ exports.sprite = sprite;
 const copy = () => {
   return gulp.src([
     "source/fonts/*.{woff2,woff}",
+    "source/img/**/*.{jpg,png,svg,webp}",
     "!source/img/icons/*"
   ],
     {
