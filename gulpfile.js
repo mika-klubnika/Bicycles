@@ -9,6 +9,7 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
+const concat = require("gulp-concat");
 const del = require("del");
 const sync = require("browser-sync").create();
 
@@ -54,6 +55,7 @@ exports.html = html;
 
 const scripts = () => {
   return gulp.src("source/js/*.js")
+    .pipe(concat("main.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
@@ -100,7 +102,6 @@ exports.sprite = sprite;
 const copy = () => {
   return gulp.src([
     "source/fonts/*.{woff2,woff}",
-    "source/img/**/*.{jpg,png,svg,webp}",
     "!source/img/icons/*"
   ],
     {
@@ -175,6 +176,7 @@ exports.default = gulp.series(
     scripts,
     sprite,
     copy,
+    images,
     createWebp,
   ),
   gulp.series(

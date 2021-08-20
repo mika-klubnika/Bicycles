@@ -7,12 +7,12 @@
   <meta name="description" content="Магазин по продаже велосипедов.">
   <title>Велосипеды</title>
 
-  <link rel="stylesheet" href="css/style.min.css">
-
   <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -40,13 +40,13 @@
           <a>
             <img src="img/logo.png" srcset="img/logo@2x.png" alt="Логотип сайта" width="68" height="21">
           </a>
-          <h1 class="text">Мы продаем велосипеды</h1>
-          <p class="text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+          <h1>Мы продаем велосипеды</h1>
+          <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
         </div>
 
         <div class="promo__block-form">
-          <p class="text">Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-          <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <form action="https://echo.htmlacademy.ru" method="post">
             <label>
               <input type="text" name="userName" placeholder="Введите Ваше Имя" required>
             </label>
@@ -61,9 +61,9 @@
   </header>
 
   <main>
-    <section class="about" id="about">
+    <section class="about section-title" id="about">
       <div class="container about__container">
-        <h2 class="title text">Несколько фактов о нас</h2>
+        <h2>Несколько фактов о нас</h2>
         <ol class="about__list list">
           <li>Самый широкий выбор велосипедов!</li>
           <li>Доставка велосипедов по всей России!</li>
@@ -73,18 +73,15 @@
       </div>
     </section>
 
-    <section class="types-bicycles" id="types-bicycles">
+    <section class="types-bicycles section-title" id="types-bicycles">
       <div class="container types-bicycles__container">
-        <h2 class="title text">Виды велосипедов</h2>
+        <h2>Виды велосипедов</h2>
         <ul class="types-bicycles__list list">
           <li class="types-bicycles__item types-bicycles__item--road">
             <figure>
               <picture>
-                <source type="image/webp" media="(min-width: 1024px)"
-                  srcset="img/road-bike.webp, img/road-bike@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/road-bike-tablet.webp, img/road-bike-tablet@2x.webp 2x">
-
+                <source type="image/webp" srcset="img/road-bike.webp, img/road-bike@2x.webp 2x">
+                <!-- 1х: 342px; 2x: 684px -->
                 <img src="img/road-bike.jpg" srcset="img/road-bike@2x.jpg 2x" alt="фото велосипеда" width="342"
                   height="503">
               </picture>
@@ -94,11 +91,8 @@
           <li class="types-bicycles__item types-bicycles__item--mountain">
             <figure>
               <picture>
-                <source type="image/webp" media="(min-width: 1024px)"
-                  srcset="img/mountain-bike.webp, img/mountain-bike@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/mountain-bike-tablet.webp, img/mountain-bike-tablet@2x.webp 2x">
-
+                <source type="image/webp" srcset="img/mountain-bike.webp, img/mountain-bike@2x.webp 2x">
+                <!-- 1х: 342px; 2x: 684px -->
                 <img src="img/mountain-bike.jpg" srcset="img/mountain-bike@2x.jpg 2x" alt="фото велосипеда" width="342"
                   height="566">
               </picture>
@@ -108,11 +102,8 @@
           <li class="types-bicycles__item types-bicycles__item--children">
             <figure>
               <picture>
-                <source type="image/webp" media="(min-width: 1024px)"
-                  srcset="img/children's-bike.webp, img/children's-bike@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)"
-                  srcset="img/children's-bike-tablet.webp, img/children's-bike-tablet@2x.webp 2x">
-
+                <source type="image/webp" srcset="img/children's-bike.webp, img/children's-bike@2x.webp 2x">
+                <!-- 1х: 342px; 2x: 684px -->
                 <img src="img/children's-bike.jpg" srcset="img/children's-bike@2x.jpg 2x" alt="фото велосипеда"
                   width="342" height="513">
               </picture>
@@ -123,22 +114,26 @@
       </div>
     </section>
 
-    <section class="video" id="video">
+    <section class="video section-title" id="video">
       <div class="container video__container">
-        <h2 class="title text">Видео про велосипеды</h2>
-        <p class="text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
         <div class="video__wrapper">
           <video></video>
-          <button type="button" aria-label="Воспроизвести">⯈</button>
+          <button type="button" aria-label="Воспроизвести">
+            <svg width="13" height="18">
+              <use xlink:href="img/sprite.svg#play"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer" id="contacts">
+  <footer class="footer section-title" id="contacts">
     <div class="container footer__container">
-      <h2 class="title text">Как нас найти?</h2>
-      <p class="text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      <h2>Как нас найти?</h2>
+      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <div class="footer__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894616006086!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1629320631208!5m2!1sru!2sru"
