@@ -5,7 +5,7 @@
   letter-spacing: -0.005em;
   color: var(--white);
 
-  // background-color: var(--background);
+  background-color: var(--background);
   background-image: url("../img/banner-bike-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -19,6 +19,7 @@
     min-height: 690px;
 
     background-image: none;
+    background-color: var(--white);
   }
 
   @media (max-width: $max-mobile) {

@@ -1,9 +1,22 @@
 .contacts {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
   margin-top: 40px;
+  padding-left: 340px;
+  padding-right: 340px;
+  width: 100%;
+
+  @media (max-width: $middle-desktop) {
+    padding-left: 145px;
+    padding-right: 145px;
+  }
 
   @media (max-width: $max-tablet) {
     margin-top: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
   @media (max-width: $max-mobile) {
@@ -11,10 +24,15 @@
     align-items: center;
 
     margin-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .contacts__item {
+  margin-bottom: 5px;
+  white-space: nowrap;
+
   &:not(:last-child) {
     margin-right: 90px;
 

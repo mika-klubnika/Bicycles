@@ -4,12 +4,11 @@
   text-align: center;
 
   @media (max-width: $max-tablet) {
-    padding-top: 63px;
+    padding-top: 50px;
     padding-bottom: 55px;
   }
 
   @media (max-width: $max-mobile) {
-    padding-top: 65px;
     padding-bottom: 60px;
   }
 }

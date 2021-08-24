@@ -171,6 +171,11 @@
 }
 
 .navigation__item a {
+  display: flex;
+  width: inherit;
+  height: 100%;
+  align-items: center;
+
   font-weight: 300;
   font-size: 16px;
   line-height: 32px;

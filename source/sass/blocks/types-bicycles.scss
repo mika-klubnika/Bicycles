@@ -1,6 +1,6 @@
 .types-bicycles {
   padding-top: 153px;
-  padding-bottom: 125px;
+  padding-bottom: 123px;
 
   background-color: var(--background-light);
 
@@ -140,6 +140,7 @@
     }
 
     @media (max-width: $max-tablet) {
+
       &::before {
         top: -22px;
         right: -23px;
@@ -162,14 +163,22 @@
   margin: 0;
 }
 
+.types-bicycles__item--children img {
+  height: 512px;
+
+  @media (max-width: $middle-desktop) {
+    height: 445px;
+  }
+}
+
 .types-bicycles__item img {
   width: 342px;
+  object-fit: cover;
   border-radius: 10px;
 
   @media (max-width: $desktop) {
     width: 270px;
     height: 300px;
-    object-fit: cover;
   }
 }
 
