@@ -1130,10 +1130,10 @@ p {
       height: 282px; } }
   @media (max-width: 767px) {
     .video__wrapper {
+      width: 100%;
       height: auto; } }
   @media (max-width: 400px) {
     .video__wrapper {
-      width: 100%;
       height: 161px; } }
 
 .video__wrapper video {
