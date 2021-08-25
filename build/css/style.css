@@ -356,6 +356,16 @@ template {
 *::after {
   box-sizing: border-box; }
 
+html {
+  font-family: "Open Sans", "Arial", sans-serif;
+  scroll-behavior: smooth; }
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0; }
+
 a {
   text-decoration: none; }
   a[href]:hover, a[href]:focus {
@@ -416,16 +426,6 @@ p {
     .section-title h2 {
       font-size: 24px;
       line-height: 30px; } }
-
-.page {
-  font-family: "Open Sans", "Arial", sans-serif;
-  scroll-behavior: smooth; }
-
-.page__body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  min-height: 100vh;
-  margin: 0; }
 
 .header {
   position: relative;

@@ -1,7 +1,8 @@
 //МЕНЮ
 
 const menu = document.querySelector('.navigation');
-const button = document.querySelector('.navigation__toggle');
+const button = menu.querySelector('.navigation__toggle');
+const links = menu.querySelectorAll('.navigation__item');
 
 if (menu && button) {
   menu.classList.remove('navigation--nojs');
@@ -15,5 +16,12 @@ if (menu && button) {
     } else {
       button.setAttribute("aria-label", "Закрыть меню");
     }
+  });
+
+  links.forEach(link => {
+    link.addEventListener("click",evt => {
+      menu.classList.add("navigation--close")
+      menu.classList.remove("navigation--open")
+    })
   });
 }
