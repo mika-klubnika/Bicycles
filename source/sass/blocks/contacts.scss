@@ -8,9 +8,9 @@
   padding-right: 340px;
   width: 100%;
 
-  @media (max-width: $middle-desktop) {
-    padding-left: 145px;
-    padding-right: 145px;
+  @media (max-width: $pre-desktop) {
+    padding-left: 135px;
+    padding-right: 135px;
   }
 
   @media (max-width: $max-tablet) {

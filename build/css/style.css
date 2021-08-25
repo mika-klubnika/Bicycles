@@ -835,10 +835,10 @@ p {
   padding-left: 340px;
   padding-right: 340px;
   width: 100%; }
-  @media (max-width: 1370px) {
+  @media (max-width: 1420px) {
     .contacts {
-      padding-left: 145px;
-      padding-right: 145px; } }
+      padding-left: 135px;
+      padding-right: 135px; } }
   @media (max-width: 1023px) {
     .contacts {
       margin-top: 20px;
