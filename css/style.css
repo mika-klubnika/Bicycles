@@ -806,10 +806,9 @@ p {
       background-image: url("../img/map-desktop@2x.png"); } }
   @media (max-width: 1370px) {
     .footer__map {
-      width: 830px; } }
+      width: 100%; } }
   @media (max-width: 1023px) {
     .footer__map {
-      width: 100%;
       height: 545px;
       background-image: url("../img/map-tablet.png"); } }
   @media (max-width: 1023px) and (min-resolution: 2dppx) {
@@ -1123,7 +1122,7 @@ p {
   height: 522px; }
   @media (max-width: 1370px) {
     .video__wrapper {
-      width: 830px; } }
+      width: 100%; } }
   @media (max-width: 1023px) {
     .video__wrapper {
       width: 503px;
